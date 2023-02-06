@@ -28,7 +28,7 @@
         <!-- features -->
         <div class="relative">
           <!-- features btn -->
-          <div class="flex items-center w-fit">
+          <div class="flex items-center w-fit nav-options">
             <button
               class="text-cl_MediumGray transition-all hover:text-cl_AlmostBlack"
             >
@@ -38,7 +38,7 @@
           </div>
           <!-- all features -->
           <div
-            class="mt-5 space-y-3 ml-8 absolute shadow-2xl p-5 z-20 top-2 left-0 rounded-lg bg-white -translate-x-2/3 w-40 invisible"
+            class="mt-5 space-y-3 ml-8 absolute shadow-2xl p-5 z-20 top-2 left-0 rounded-lg bg-white -translate-x-2/3 w-40 hidden"
           >
             <!-- todo list -->
             <a href="#" class="flex items-center">
@@ -70,7 +70,7 @@
           <!-- company -->
           <div class="relative">
             <!-- company btn -->
-            <div class="flex items-center w-fit">
+            <div class="flex items-center w-fit nav-options">
               <button
                 class="text-cl_MediumGray transition-all hover:text-cl_AlmostBlack"
               >
@@ -79,7 +79,7 @@
               <img class="ml-3" src="./images/icon-arrow-down.svg" alt="" />
             </div>
             <div
-              class="mt-5 space-y-3 ml-8 flex flex-col absolute shadow-2xl p-5 z-20 top-2 left-0 rounded-lg bg-white -translate-x-1/4 w-32 invisible"
+              class="mt-5 space-y-3 ml-8 absolute shadow-2xl p-5 z-20 top-2 left-0 rounded-lg bg-white -translate-x-1/4 w-32 hidden"
             >
               <a href="#">History</a>
               <a href="#">Our Team</a>
@@ -117,23 +117,37 @@
       </div>
       <!-- menu btn -->
       <button>
-        <img class="md:hidden" src="./images/icon-menu.svg" alt="" />
+        <img
+          id="menu-btn"
+          class="md:hidden"
+          src="./images/icon-menu.svg"
+          alt="icon-menu.svg"
+        />
       </button>
     </nav>
-    <!-- side bar -->
-    <aside class="fixed h-screen right-0 top-0 w-screen -translate-x-full">
-      <div class="ml-auto aside-content flex flex-col bg-white h-screen p-5">
-        <img class="ml-auto" src="./images/icon-close-menu.svg" alt="" />
+    <!-- sidebar -->
+    <aside class="sidebar fixed right-0 top-0 w-screen z-20">
+      <!-- sidebar container -->
+      <div
+        class="sidebar-content ml-auto flex flex-col bg-white min-h-screen p-5 space-y-7"
+      >
+        <!-- sidebar close btn -->
+        <img
+          id="close-btn"
+          class="ml-auto"
+          src="./images/icon-close-menu.svg"
+          alt=""
+        />
         <div class="flex flex-col space-y-4">
           <!-- features -->
           <div>
             <!-- features btn -->
-            <div class="flex items-center w-fit">
+            <div class="flex items-center w-fit nav-options">
               <button class="text-cl_MediumGray">Features</button>
               <img class="ml-3" src="./images/icon-arrow-down.svg" alt="" />
             </div>
             <!-- all features -->
-            <div class="mt-5 space-y-3 ml-8">
+            <div class="feature-options mt-5 space-y-3 ml-8 hidden">
               <!-- todo list -->
               <a href="#" class="flex items-center">
                 <img class="h-5" src="./images/icon-todo.svg" alt="" />
@@ -164,16 +178,14 @@
             <!-- company -->
             <div>
               <!-- company btn -->
-              <div class="flex items-center w-fit">
+              <div class="flex items-center w-fit nav-options">
                 <button class="text-cl_MediumGray">Company</button>
                 <img class="ml-3" src="./images/icon-arrow-down.svg" alt="" />
               </div>
-              <div>
-                <div class="mt-5 space-y-3 ml-8 flex flex-col">
-                  <a href="#">History</a>
-                  <a href="#">Our Team</a>
-                  <a href="#">Blog</a>
-                </div>
+              <div class="company-options mt-5 space-y-3 ml-8 hidden">
+                <a href="#">History</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
               </div>
             </div>
           </div>
@@ -197,9 +209,13 @@
         </div>
       </div>
     </aside>
+    <!-- sidebar shadow -->
+    <div
+      class="sidebar-shadow h-screen w-screen fixed bg-black top-0 left-0"
+    ></div>
     <!-- header -->
     <header
-      class="space-y-9 mb-32 md:flex md:mb-10 md:flex-row-reverse md:items-center md:px-10 lg:px-16 xl:px-28 md:justify-between md:space-y-0"
+      class="space-y-9 mb-24 md:flex md:mb-10 md:flex-row-reverse md:items-center md:px-10 lg:px-16 xl:px-28 md:justify-between md:space-y-0"
     >
       <img class="md:hidden" src="./images/image-hero-mobile.png" alt="" />
       <img
@@ -236,7 +252,7 @@
 
     <!-- footer -->
     <footer
-      class="fixed bottom-0 left-1/2 -translate-x-1/2 bg-cl_white py-1 px-2 text-cl_verydarkblue_1 text-center text-xs rounded-t-xl bg-white w-96"
+      class="fixed bottom-0 left-1/2 -translate-x-1/2 bg-cl_white py-1 px-2 text-cl_verydarkblue_1 text-center text-xs rounded-t-xl bg-white z-50"
     >
       Challenge by
       <a
@@ -251,5 +267,6 @@
         >Amir Hossein Azizi</a
       >
     </footer>
+    <script src="./js/app.js"></script>
   </body>
 </html>

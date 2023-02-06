@@ -6,19 +6,50 @@ html {
     font-size: 18px;
 }
 
-aside {
-    background-color: rgba(0, 0, 0, 0.656);
-    /* transform: translateX(100%); */
+a {
+    display: block;
 }
 
-.aside-content {
+/* no scroll class */
+.no-scroll {
+    width: 100%;
+    overflow: hidden;
+}
+
+aside {
+    transition: all 250ms;
+    transform: translateX(100%);
+    overflow-y: scroll;
+}
+
+.sidebar-content {
     width: 65%;
 }
+
+.sidebar-shadow {
+    opacity: 0;
+    display: none;
+}
+
+.active-sidebar-shadow {
+    opacity: .5;
+    display: block;
+}
+
+.active-sidebar {
+    transform: translateX(0%);
+}
+
+/* .nav-options {
+    display: none;
+} */
 
 .header-text {
     font-size: .9rem;
 }
 
+/* footer shadow */
 footer {
+    display: none;
     box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.187);
 }
