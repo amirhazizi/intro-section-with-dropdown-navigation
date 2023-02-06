@@ -18,13 +18,115 @@
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
-    Features Company Careers About Login Register Make remote work Get your team
-    in sync, no matter your location. Streamline processes, create team rituals,
-    and watch productivity soar. Learn more
+    <!-- nav -->
+    <nav class="flex justify-between items-center p-4">
+      <!-- logo -->
+      <img src="./images/logo.svg" alt="" />
+      <!-- menu btn -->
+      <button>
+        <img src="./images/icon-menu.svg" alt="" />
+      </button>
+    </nav>
+    <!-- side bar -->
+    <aside class="fixed h-screen right-0 top-0 w-screen -translate-x-full">
+      <div class="ml-auto aside-content flex flex-col bg-white h-screen p-5">
+        <img class="ml-auto" src="./images/icon-close-menu.svg" alt="" />
+        <!-- features -->
+        <div class="flex flex-col space-y-4">
+          <div>
+            <!-- features btn -->
+            <div class="flex items-center w-fit">
+              <button>Features</button>
+              <img class="ml-3" src="./images/icon-arrow-down.svg" alt="" />
+            </div>
+            <!-- all features -->
+            <div class="mt-5 space-y-3 ml-8">
+              <!-- todo list -->
+              <a href="#" class="flex items-center">
+                <img class="h-5" src="./images/icon-todo.svg" alt="" />
+                <p class="ml-3 text-cl_MediumGray">Todo List</p>
+              </a>
+              <!-- end of todo list -->
+              <!-- calendar -->
+              <a href="#" class="flex items-center">
+                <img class="h-5" src="./images/icon-calendar.svg" alt="" />
+                <p class="ml-3 text-cl_MediumGray">Calender</p>
+              </a>
+              <!-- end of calendar -->
+              <!-- remiders -->
+              <a href="#" class="flex items-center">
+                <img class="h-5" src="./images/icon-reminders.svg" alt="" />
+                <p class="ml-3 text-cl_MediumGray">Reminders</p>
+              </a>
+              <!-- end of remiders -->
+              <!-- planing -->
+              <a href="#" class="flex items-center">
+                <img class="h-5" src="./images/icon-planning.svg" alt="" />
+                <p class="ml-3 text-cl_MediumGray">Planing</p>
+              </a>
+              <!-- end of planing -->
+            </div>
+          </div>
+          <div>
+            <!-- company -->
+            <div>
+              <!-- company btn -->
+              <div class="flex items-center w-fit">
+                <button>Company</button>
+                <img class="ml-3" src="./images/icon-arrow-down.svg" alt="" />
+              </div>
+              <div>
+                <div class="mt-5 space-y-3 ml-8 flex flex-col">
+                  <a href="#">History</a>
+                  <a href="#">Our Team</a>
+                  <a href="#">Blog</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Careers -->
+          <a class="text-cl_MediumGray" href="#">Careers</a>
+          <!-- About -->
+          <a class="text-cl_MediumGray" href="#">About</a>
+        </div>
+        <!-- login register -->
+        <div class="flex flex-col items-center space-y-1 w-full">
+          <a class="py-2 text-sm" href="#">Login</a>
+          <a
+            href="#"
+            class="text-center border-cl_AlmostBlack rounded-2xl w-full py-2 border text-cl_MediumGray text-sm"
+            >Register</a
+          >
+        </div>
+      </div>
+    </aside>
+    <!-- header -->
+    <header class="space-y-9 mb-32">
+      <img src="./images/image-hero-mobile.png" alt="" />
+      <div class="text-center space-y-3 px-3">
+        <h1 class="text-3xl font-bold">Make remote work</h1>
+        <p class="text-cl_MediumGray">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button
+          class="bg-cl_AlmostBlack p-4 py-2 rounded-xl text-cl_AlmostWhite"
+        >
+          Learn more
+        </button>
+        <!-- clients icons -->
+        <div class="flex items-center justify-between pt-8">
+          <img class="h-3" src="./images/client-databiz.svg" alt="" />
+          <img class="h-6" src="./images/client-audiophile.svg" alt="" />
+          <img class="h-3" src="./images/client-meet.svg" alt="" />
+          <img class="h-4" src="./images/client-maker.svg" alt="" />
+        </div>
+      </div>
+    </header>
 
     <!-- footer -->
     <footer
-      class="fixed bottom-0 left-1/2 -translate-x-1/2 bg-cl_white py-1 px-2 text-cl_verydarkblue_1 text-center text-sm rounded-t-xl bg-white"
+      class="fixed bottom-0 left-1/2 -translate-x-1/2 bg-cl_white py-1 px-2 text-cl_verydarkblue_1 text-center text-xs rounded-t-xl bg-white w-96"
     >
       Challenge by
       <a

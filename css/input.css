@@ -5,3 +5,12 @@
 html {
     font-size: 18px;
 }
+
+aside {
+    background-color: rgba(0, 0, 0, 0.656);
+    /* transform: translateX(100%); */
+}
+
+.aside-content {
+    width: 65%;
+}
