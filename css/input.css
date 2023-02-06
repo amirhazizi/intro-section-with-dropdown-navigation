@@ -14,3 +14,11 @@ aside {
 .aside-content {
     width: 65%;
 }
+
+.header-text {
+    font-size: .9rem;
+}
+
+footer {
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.187);
+}

@@ -19,24 +19,117 @@
   </head>
   <body>
     <!-- nav -->
-    <nav class="flex justify-between items-center p-4">
+    <nav
+      class="flex justify-between items-center p-4 pt-6 md:px-7 md:justify-start md:mb-10"
+    >
       <!-- logo -->
       <img src="./images/logo.svg" alt="" />
+      <div class="hidden md:flex space-x-8 ml-10 md:items-start -mt-2">
+        <!-- features -->
+        <div class="relative">
+          <!-- features btn -->
+          <div class="flex items-center w-fit">
+            <button
+              class="text-cl_MediumGray transition-all hover:text-cl_AlmostBlack"
+            >
+              Features
+            </button>
+            <img class="ml-2" src="./images/icon-arrow-down.svg" alt="" />
+          </div>
+          <!-- all features -->
+          <div
+            class="mt-5 space-y-3 ml-8 absolute shadow-2xl p-5 z-20 top-2 left-0 rounded-lg bg-white -translate-x-2/3 w-40 invisible"
+          >
+            <!-- todo list -->
+            <a href="#" class="flex items-center">
+              <img class="h-5" src="./images/icon-todo.svg" alt="" />
+              <p class="ml-3 text-cl_MediumGray">Todo List</p>
+            </a>
+            <!-- end of todo list -->
+            <!-- calendar -->
+            <a href="#" class="flex items-center">
+              <img class="h-5" src="./images/icon-calendar.svg" alt="" />
+              <p class="ml-3 text-cl_MediumGray">Calender</p>
+            </a>
+            <!-- end of calendar -->
+            <!-- remiders -->
+            <a href="#" class="flex items-center">
+              <img class="h-5" src="./images/icon-reminders.svg" alt="" />
+              <p class="ml-3 text-cl_MediumGray">Reminders</p>
+            </a>
+            <!-- end of remiders -->
+            <!-- planing -->
+            <a href="#" class="flex items-center">
+              <img class="h-5" src="./images/icon-planning.svg" alt="" />
+              <p class="ml-3 text-cl_MediumGray">Planing</p>
+            </a>
+            <!-- end of planing -->
+          </div>
+        </div>
+        <div>
+          <!-- company -->
+          <div class="relative">
+            <!-- company btn -->
+            <div class="flex items-center w-fit">
+              <button
+                class="text-cl_MediumGray transition-all hover:text-cl_AlmostBlack"
+              >
+                Company
+              </button>
+              <img class="ml-3" src="./images/icon-arrow-down.svg" alt="" />
+            </div>
+            <div
+              class="mt-5 space-y-3 ml-8 flex flex-col absolute shadow-2xl p-5 z-20 top-2 left-0 rounded-lg bg-white -translate-x-1/4 w-32 invisible"
+            >
+              <a href="#">History</a>
+              <a href="#">Our Team</a>
+              <a href="#">Blog</a>
+            </div>
+          </div>
+        </div>
+        <!-- Careers -->
+        <a
+          class="text-cl_MediumGray transition-all hover:text-cl_AlmostBlack"
+          href="#"
+          >Careers</a
+        >
+        <!-- About -->
+        <a
+          class="text-cl_MediumGray transition-all hover:text-cl_AlmostBlack"
+          href="#"
+          >About</a
+        >
+      </div>
+      <!-- login register -->
+      <div
+        class="hidden md:flex items-center ml-auto self-center space-x-7 -mt-1"
+      >
+        <a
+          class="py-2 text-sm transition-all hover:text-cl_AlmostBlack"
+          href="#"
+          >Login</a
+        >
+        <a
+          href="#"
+          class="text-center border-cl_MediumGray rounded-2xl py-2 px-6 border text-cl_MediumGray text-sm transition-all hover:text-cl_AlmostBlack hover:border-cl_AlmostBlack"
+          >Register</a
+        >
+      </div>
       <!-- menu btn -->
       <button>
-        <img src="./images/icon-menu.svg" alt="" />
+        <img class="md:hidden" src="./images/icon-menu.svg" alt="" />
       </button>
     </nav>
     <!-- side bar -->
     <aside class="fixed h-screen right-0 top-0 w-screen -translate-x-full">
       <div class="ml-auto aside-content flex flex-col bg-white h-screen p-5">
         <img class="ml-auto" src="./images/icon-close-menu.svg" alt="" />
-        <!-- features -->
         <div class="flex flex-col space-y-4">
+          <!-- features -->
           <div>
             <!-- features btn -->
             <div class="flex items-center w-fit">
-              <button>Features</button>
+              <button class="text-cl_MediumGray">Features</button>
               <img class="ml-3" src="./images/icon-arrow-down.svg" alt="" />
             </div>
             <!-- all features -->
@@ -72,7 +165,7 @@
             <div>
               <!-- company btn -->
               <div class="flex items-center w-fit">
-                <button>Company</button>
+                <button class="text-cl_MediumGray">Company</button>
                 <img class="ml-3" src="./images/icon-arrow-down.svg" alt="" />
               </div>
               <div>
@@ -91,35 +184,52 @@
         </div>
         <!-- login register -->
         <div class="flex flex-col items-center space-y-1 w-full">
-          <a class="py-2 text-sm" href="#">Login</a>
+          <a
+            class="py-2 text-sm transition-all hover:text-cl_AlmostBlack"
+            href="#"
+            >Login</a
+          >
           <a
             href="#"
-            class="text-center border-cl_AlmostBlack rounded-2xl w-full py-2 border text-cl_MediumGray text-sm"
+            class="text-center border-cl_MediumGray rounded-2xl w-full py-2 border text-cl_MediumGray text-sm transition-all hover:text-cl_AlmostBlack hover:border-cl_AlmostBlack"
             >Register</a
           >
         </div>
       </div>
     </aside>
     <!-- header -->
-    <header class="space-y-9 mb-32">
-      <img src="./images/image-hero-mobile.png" alt="" />
-      <div class="text-center space-y-3 px-3">
-        <h1 class="text-3xl font-bold">Make remote work</h1>
-        <p class="text-cl_MediumGray">
+    <header
+      class="space-y-9 mb-32 md:flex md:mb-10 md:flex-row-reverse md:items-center md:px-10 lg:px-16 xl:px-28 md:justify-between md:space-y-0"
+    >
+      <img class="md:hidden" src="./images/image-hero-mobile.png" alt="" />
+      <img
+        class="hidden md:block md:w-2/5 md:self-center"
+        src="./images/image-hero-desktop.png"
+        alt=""
+      />
+      <div
+        class="text-center space-y-5 px-3 md:text-left md:px-3 md:max-w-lg md:space-y-7 lg:space-y-10 md:w-3/5 md:self-end"
+      >
+        <h1 class="text-3xl font-bold md:text-5xl lg:text-7xl">
+          Make remote work
+        </h1>
+        <p class="header-text text-cl_MediumGray md:max-w-sm">
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
         <button
-          class="bg-cl_AlmostBlack p-4 py-2 rounded-xl text-cl_AlmostWhite"
+          class="bg-cl_AlmostBlack p-5 py-3 rounded-xl text-cl_AlmostWhite border-cl_AlmostBlack border-2 transition-all hover:text-cl_AlmostBlack hover:bg-cl_AlmostWhite"
         >
           Learn more
         </button>
         <!-- clients icons -->
-        <div class="flex items-center justify-between pt-8">
-          <img class="h-3" src="./images/client-databiz.svg" alt="" />
-          <img class="h-6" src="./images/client-audiophile.svg" alt="" />
-          <img class="h-3" src="./images/client-meet.svg" alt="" />
-          <img class="h-4" src="./images/client-maker.svg" alt="" />
+        <div
+          class="flex items-center justify-between pt-8 md:max-w-sm lg:max-w-md"
+        >
+          <img class="h-3 md:h-4" src="./images/client-databiz.svg" alt="" />
+          <img class="h-6 md:h-8" src="./images/client-audiophile.svg" alt="" />
+          <img class="h-3 md:h-4" src="./images/client-meet.svg" alt="" />
+          <img class="h-4 md:h-5" src="./images/client-maker.svg" alt="" />
         </div>
       </div>
     </header>
@@ -130,12 +240,14 @@
     >
       Challenge by
       <a
-        class="font-bold text-cl_Blue"
+        class="font-bold text-cl_MediumGray transition-all hover:text-cl_AlmostBlack"
         href="https://www.frontendmentor.io?ref=challenge"
         target="_blank"
         >Frontend Mentor</a
       >. Coded by
-      <a class="font-bold text-cl_Blue" href="https://github.com/amirhazizi"
+      <a
+        class="font-bold text-cl_MediumGray transition-all hover:text-cl_AlmostBlack"
+        href="https://github.com/amirhazizi"
         >Amir Hossein Azizi</a
       >
     </footer>
