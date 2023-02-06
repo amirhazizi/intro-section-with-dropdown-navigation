@@ -19,7 +19,6 @@ a {
 aside {
     transition: all 250ms;
     transform: translateX(100%);
-    overflow-y: scroll;
 }
 
 .sidebar-content {
@@ -48,8 +47,8 @@ aside {
     font-size: .9rem;
 }
 
+
 /* footer shadow */
 footer {
-    display: none;
     box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.187);
 }

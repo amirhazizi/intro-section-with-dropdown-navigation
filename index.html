@@ -24,7 +24,9 @@
     >
       <!-- logo -->
       <img src="./images/logo.svg" alt="" />
-      <div class="hidden md:flex space-x-8 ml-10 md:items-start -mt-2">
+      <div
+        class="hidden md:flex space-x-8 ml-6 md:items-start -mt-2 justify-self-end"
+      >
         <!-- features -->
         <div class="relative">
           <!-- features btn -->
@@ -81,9 +83,21 @@
             <div
               class="mt-5 space-y-3 ml-8 absolute shadow-2xl p-5 z-20 top-2 left-0 rounded-lg bg-white -translate-x-1/4 w-32 hidden"
             >
-              <a href="#">History</a>
-              <a href="#">Our Team</a>
-              <a href="#">Blog</a>
+              <a
+                class="text-cl_MediumGray transition-all hover:text-cl_AlmostBlack"
+                href="#"
+                >History</a
+              >
+              <a
+                class="text-cl_MediumGray transition-all hover:text-cl_AlmostBlack"
+                href="#"
+                >Our Team</a
+              >
+              <a
+                class="text-cl_MediumGray transition-all hover:text-cl_AlmostBlack"
+                href="#"
+                >Blog</a
+              >
             </div>
           </div>
         </div>
@@ -102,7 +116,7 @@
       </div>
       <!-- login register -->
       <div
-        class="hidden md:flex items-center ml-auto self-center space-x-7 -mt-1"
+        class="hidden md:flex items-center ml-auto self-center space-x-5 -mt-1"
       >
         <a
           class="py-2 text-sm transition-all hover:text-cl_AlmostBlack"
@@ -116,13 +130,8 @@
         >
       </div>
       <!-- menu btn -->
-      <button>
-        <img
-          id="menu-btn"
-          class="md:hidden"
-          src="./images/icon-menu.svg"
-          alt="icon-menu.svg"
-        />
+      <button class="md:hidden">
+        <img id="menu-btn" src="./images/icon-menu.svg" alt="icon-menu.svg" />
       </button>
     </nav>
     <!-- sidebar -->
@@ -215,11 +224,11 @@
     ></div>
     <!-- header -->
     <header
-      class="space-y-9 mb-24 md:flex md:mb-10 md:flex-row-reverse md:items-center md:px-10 lg:px-16 xl:px-28 md:justify-between md:space-y-0"
+      class="space-y-9 mb-24 md:mb-16 md:flex md:flex-row-reverse md:items-center md:px-10 lg:px-16 xl:px-28 md:justify-between md:space-y-0"
     >
       <img class="md:hidden" src="./images/image-hero-mobile.png" alt="" />
       <img
-        class="hidden md:block md:w-2/5 md:self-center"
+        class="hidden md:block w-2/5 self-center"
         src="./images/image-hero-desktop.png"
         alt=""
       />
@@ -252,17 +261,17 @@
 
     <!-- footer -->
     <footer
-      class="fixed bottom-0 left-1/2 -translate-x-1/2 bg-cl_white py-1 px-2 text-cl_verydarkblue_1 text-center text-xs rounded-t-xl bg-white z-50"
+      class="w-fit mx-auto py-1 px-2 text-center text-xs rounded-t-xl bg-white"
     >
       Challenge by
       <a
-        class="font-bold text-cl_MediumGray transition-all hover:text-cl_AlmostBlack"
+        class="inline-block font-bold text-cl_MediumGray transition-all hover:text-cl_AlmostBlack"
         href="https://www.frontendmentor.io?ref=challenge"
         target="_blank"
         >Frontend Mentor</a
       >. Coded by
       <a
-        class="font-bold text-cl_MediumGray transition-all hover:text-cl_AlmostBlack"
+        class="inline-block font-bold text-cl_MediumGray transition-all hover:text-cl_AlmostBlack"
         href="https://github.com/amirhazizi"
         >Amir Hossein Azizi</a
       >
